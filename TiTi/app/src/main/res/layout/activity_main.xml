@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/backgroundView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/BLUE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/graph"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            app:progress_background_color="@color/DARKGRAY"
+            app:progress_end_color="@color/WHITE"
+            app:progress_start_color="@color/WHITE"
+            app:progress_stroke_width="15dp"
+            app:progress_text_color="@color/WHITE"
+            app:progress_text_size="45dp"
+            app:style="solid_line" />
+
+        <Button
+            android:id="@+id/TEST"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/BUTTON"
+            android:textColor="@color/WHITE"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="TEST" />
+
+        <Button
+            android:id="@+id/STOP"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/BUTTON"
+            android:text="STOP"
+            android:textColor="@color/WHITE"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </LinearLayout>
+
+</RelativeLayout>
